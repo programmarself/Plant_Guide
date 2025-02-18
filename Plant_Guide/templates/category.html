@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ season }} Plants</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <h1>{{ season }} Plants</h1>
+    <a href="/">Home</a>
+    <ul>
+        {% for plant in plants %}
+            <li><strong>{{ plant['Name'] }}</strong>: {{ plant['Description'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
